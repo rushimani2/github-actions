@@ -34,7 +34,6 @@ class BankAccount:
 
 # src/tests/test_bank.py
 import pytest
-from bank import BankAccount, InsufficientFundsError
 
 def test_account_creation():
     """Test creating an account with an initial balance."""
