@@ -1,22 +1,8 @@
-#importing module for random number generation
 import random
-
-#range of the values of a dice
-min_val = 1
-max_val = 6
-
-#to loop the rolling through user input
-roll_again = "yes"
-
-#loop
-while roll_again == "yes" or roll_again == "y":
-    print("Rolling The Dices...")
-    print("The Values are :")
-    
-    #generating and printing 1st random integer from 1 to 6
-    print(random.randint(min_val, max_val))
-    
-    #generating and printing 2nd random integer from 1 to 6
-    print(random.randint(min_val, max_val))
-    
-
+when = ['A few years ago', 'Yesterday', 'Last night', 'A long time ago','On 20th Jan']
+who = ['a rabbit', 'an elephant', 'a mouse', 'a turtle','a cat']
+name = ['Ali', 'Miriam','daniel', 'Hoouk', 'Starwalker']
+residence = ['Barcelona','India', 'Germany', 'Venice', 'England']
+went = ['cinema', 'university','seminar', 'school', 'laundry']
+happened = ['made a lot of friends','Eats a burger', 'found a secret key', 'solved a mistery', 'wrote a book']
+print(random.choice(when) + ', ' + random.choice(who) + ' that lived in ' + random.choice(residence) + ', went to the ' + random.choice(went) + ' and ' + random.choice(happened))
